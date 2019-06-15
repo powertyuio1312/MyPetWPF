@@ -1,0 +1,55 @@
+﻿<Window x:Class="MyPets.ProgressBlank"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPets"
+        mc:Ignorable="d"
+        Title="ProgressBlank" Height="650" Width="610" ResizeMode="NoResize">
+    <Grid Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="90"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="{DynamicResource l_EvDayNote}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Arial" FontWeight="Bold"/>
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_Pet}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <ComboBox x:Name="CurrentPetCB" Style="{DynamicResource ComboBox}" Width="200" Height="35" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,0,0,0" />
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_Activ}" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <ComboBox x:Name="ActivityCB" Style="{DynamicResource ComboBox}" Width="200" Height="35" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,0,0,0" >
+            <ComboBoxItem>Повышенная</ComboBoxItem>
+            <ComboBoxItem>Нормальная</ComboBoxItem>
+            <ComboBoxItem>Низкая</ComboBoxItem>
+        </ComboBox>
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_Apet}" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <ComboBox Style="{DynamicResource ComboBox}" Width="200" Height="35" x:Name="ApetCB" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,0,0,0">
+            <ComboBoxItem>Повышенный</ComboBoxItem>
+            <ComboBoxItem>Нормальный</ComboBoxItem>
+            <ComboBoxItem>Низкий</ComboBoxItem>
+        </ComboBox>
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_Weight}" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <TextBox Name="WeightTB" Width="200" Height="35" Style="{DynamicResource TextBox}" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,0,0,0" Background="#cc99ff"/>
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_Hear}" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <ComboBox Width="200" Style="{DynamicResource ComboBox}" Height="35" x:Name="HearCB" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,27,0,0" >
+            <ComboBoxItem>Гладкая</ComboBoxItem>
+            <ComboBoxItem>Тусклая</ComboBoxItem>
+        </ComboBox>
+
+        <Label Style="{DynamicResource Label}" Content="{DynamicResource l_date}" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0"/>
+        <Label x:Name="ValidLabel" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="275,0,0,0" Foreground="Red"/>
+        <DatePicker Name="DatePic" Width="200" Margin="200,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
+
+        <Button Style="{DynamicResource Button}" Content="{DynamicResource l_Save}" Width="520" Grid.Row="7"  Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click_Save" />
+        <Button Style="{DynamicResource ButtBack}" Content="{DynamicResource l_Back}" Width="100" Grid.Row="7" Height="25" Margin="0,0,0,5"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_Back" />
+    </Grid>
+</Window>

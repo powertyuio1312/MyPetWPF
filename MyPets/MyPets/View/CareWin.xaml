@@ -1,0 +1,42 @@
+﻿<Window x:Class="MyPets.View.CareWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPets.View"
+        mc:Ignorable="d"
+        Title="CareWin" Height="650" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="Bisque">
+        <StackPanel>
+            <Expander Header="{DynamicResource l_Care}" Style="{DynamicResource Exp}" Margin="10" BorderBrush="#cc99ff" BorderThickness="5">
+                <FlowDocumentReader Height="330" FontSize="16">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run x:Name="RunCare"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentReader>
+            </Expander>
+            <Expander Header="{DynamicResource l_Ill}" Style="{DynamicResource Exp}" Margin="10" BorderBrush="#cc99ff" BorderThickness="5">
+                <FlowDocumentReader Height="330" FontSize="16">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run x:Name="RunIlls"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentReader>
+            </Expander>
+            <Expander Header="{DynamicResource l_Vac}" Style="{DynamicResource Exp}" Margin="10" BorderBrush="#cc99ff" BorderThickness="5">
+                <FlowDocumentReader Height="330" FontSize="16">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run x:Name="RunVacina"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentReader>
+            </Expander>
+
+            <Button Style="{DynamicResource Button}" Content="{DynamicResource l_Back}" Width="750"  Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_MAIN" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyPets.Models.CARE">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>Models\CARE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.KIND">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAgAAAIAAAAgA=</HashCode>
+      <FileName>Models\KIND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.PET">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEAAAAAAAAEACACAAAAAAIAAACEAmAAQAAAAAAQ=</HashCode>
+      <FileName>Models\PET.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.PETSPROGRESS">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIBAACECAAAAAAIAAAAAAAAAAAAAAgAAAgA=</HashCode>
+      <FileName>Models\PETSPROGRESS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.PETTYPE">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAABAAAAAAAAAAAAAAAAAAIAAAAAAAAgA=</HashCode>
+      <FileName>Models\PETTYPE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.USER">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\USER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Validator">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAAE=</HashCode>
+      <FileName>Utils\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.ViewModels.Repository">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADIAKACAQgIAAQBEAEAAogBAAAQAAEAAAAAQAAgA=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+      <Field Name="currUser" />
+      <Property Name="CurrUser" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.Authentification">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAACAEAAAAAABAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>View\Authentification.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="repo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.PetCreate">
+    <Position X="16.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAIAAAAAAAAAAEAQAAAIAAAAAQAAAAAAIAAAQA=</HashCode>
+      <FileName>View\PetCreate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.Registration">
+    <Position X="11.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>View\Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.MainWindow">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAQQAAAAEAEAAAgAAAIAgAAAAAAAIAAAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.Map">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Map.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.PetsAcc">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAEAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PetsAcc.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.View.CareWin">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CareWin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="repo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.ProgressChart">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAQAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>View\ProgressChart.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="repo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.ProgressBlank">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAQAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ProgressBlank.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyPets.md5Hasher">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABAAAAAA=</HashCode>
+      <FileName>Utils\md5Hasher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPets.Models.DContext">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEAAAAAAAAAAAAAAAAAAEAAAAAAAMAAAAAAAQAg=</HashCode>
+      <FileName>Models\DContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MyPets.Utils.IRepository&lt;U, V, T, D&gt;">
+    <Position X="13" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADIAKAAAAAIAAQAEAAAAIAAAAAAAAEAAAAAAAAgA=</HashCode>
+      <FileName>Utils\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

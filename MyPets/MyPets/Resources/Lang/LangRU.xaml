@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MyPets.Resources.Lang"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="l_Log">Email</v:String>
+    <v:String x:Key="l_Pass">Пароль</v:String>
+    <v:String x:Key="l_Enter">Войти</v:String>
+    <v:String x:Key="l_Back">Назад</v:String>
+    <v:String x:Key="l_Reg">Зарегистрироваться</v:String>
+    <v:String x:Key="l_Type">Выберете тип питомца</v:String>
+    <v:String x:Key="l_Photo">Добавить фотографию</v:String>
+    <v:String x:Key="l_Kind">Порода</v:String>
+    <v:String x:Key="l_Name">Имя</v:String>
+    <v:String x:Key="l_Age">Возраст</v:String>
+    <v:String x:Key="l_Weight">Вес</v:String>
+    <v:String x:Key="l_Sex">Пол</v:String>
+    <v:String x:Key="l_NewPet">Создать питомца</v:String>
+    <v:String x:Key="l_PetList">Ваши питомцы</v:String>
+    <v:String x:Key="l_Galery">Галерея</v:String>
+    <v:String x:Key="l_Apt">Вет. аптеки</v:String>
+    <v:String x:Key="l_Vac">Вакцинация</v:String>
+    <v:String x:Key="l_Ill">Заболевания</v:String>
+    <v:String x:Key="l_chart">График</v:String>
+    <v:String x:Key="l_Note">Здоровье</v:String>
+    <v:String x:Key="l_Care">Уход</v:String>
+    <v:String x:Key="l_EvDayNote">Ежедневные физиологические показатели</v:String>
+    <v:String x:Key="l_Pet">Питомец:</v:String>
+    <v:String x:Key="l_Activ">Активность:</v:String>
+    <v:String x:Key="l_Apet">Аппетит:</v:String>
+    <v:String x:Key="l_Hear">Состояние шерсти:</v:String>
+    <v:String x:Key="l_date">Дата:</v:String>
+    <v:String x:Key="l_Save">Сохранить</v:String>
+    <v:String x:Key="l_maxW">Максимальный вес</v:String>
+    <v:String x:Key="l_minW">Минимальный вес</v:String>
+    <v:String x:Key="l_Del">Удалить</v:String>
+</ResourceDictionary>

@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MyPets.Resources"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="l_Log">Email</v:String>
+    <v:String x:Key="l_Pass">Password</v:String>
+    <v:String x:Key="l_Enter">Sign in</v:String>
+    <v:String x:Key="l_Back">Back</v:String>
+    <v:String x:Key="l_Reg">Register</v:String>
+    <v:String x:Key="l_Type">What is the pet type?</v:String>
+    <v:String x:Key="l_Photo">Add photo</v:String>
+    <v:String x:Key="l_Kind">Kind</v:String>
+    <v:String x:Key="l_Name">Name</v:String>
+    <v:String x:Key="l_Age">Age</v:String>
+    <v:String x:Key="l_Weight">Weight</v:String>
+    <v:String x:Key="l_Sex">Sex</v:String>
+    <v:String x:Key="l_NewPet">Create pet</v:String>
+    <v:String x:Key="l_PetList">Your pets</v:String>
+    <v:String x:Key="l_Galery">Galery</v:String>
+    <v:String x:Key="l_Care">Care</v:String>
+    <v:String x:Key="l_Apt">Nearest Drugstore</v:String>
+    <v:String x:Key="l_Vac">Vactination</v:String>
+    <v:String x:Key="l_Ill">Illnesses</v:String>
+    <v:String x:Key="l_chart">Progress</v:String>
+    <v:String x:Key="l_Note">Health Note</v:String>
+    <v:String x:Key="l_EvDayNote">Daily physiological indicators</v:String>
+    <v:String x:Key="l_Pet">Pet</v:String>
+    <v:String x:Key="l_Activ">Activity</v:String>
+    <v:String x:Key="l_Apet">Appetite</v:String>
+    <v:String x:Key="l_Hear">Hear state</v:String>
+    <v:String x:Key="l_date">Date</v:String>
+    <v:String x:Key="l_Save">Save</v:String>
+    <v:String x:Key="l_maxW">Max weight</v:String>
+    <v:String x:Key="l_minW">Min weight</v:String>
+    <v:String x:Key="l_Del">Delete</v:String>
+</ResourceDictionary>

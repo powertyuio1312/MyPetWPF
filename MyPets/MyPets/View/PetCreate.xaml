@@ -1,0 +1,64 @@
+﻿<Window x:Class="MyPets.PetCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPets"
+        mc:Ignorable="d" 
+        Icon="/Resources/Img/icocat.ico"
+        Title="PetCreate" Height="700" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Style="{DynamicResource Grid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="130"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Content="{DynamicResource l_Type}" FontSize="25" HorizontalAlignment="Center"/>
+
+        <Image  Source="/Resources/Img/CatType.png" Grid.Row="0" Width="110" Height="120" Margin="90,30,0,0" HorizontalAlignment="Left" />
+        <RadioButton Name="CatRadioButton"  GroupName="TypeGroup"  Checked="CatRadioButton_Checked"  Grid.Row="1"  Margin="-190,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <Image Source="/Resources/Img/DogType.png" Grid.Row="0" Width="110" Height="130" Margin="0,30,90,0" HorizontalAlignment="Right"/>
+        <RadioButton Name="DogRadioButton"  GroupName="TypeGroup" Checked="DogRadioButton_Checked" Grid.Row="1"  Margin="210,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        
+        <Label Style="{DynamicResource Label}" Grid.Row="1" Content="{DynamicResource l_Name}" Margin="70,20,0,0" />
+        <TextBox Name="NameTextBox" Style="{DynamicResource TextBox}" Grid.Row="1" Margin="0,0,30,0" HorizontalAlignment="Right" Width="200" Height="50"/>
+
+        <Label Style="{DynamicResource Label}" Grid.Row="2" Content="{DynamicResource l_Kind}" Margin="80,30,0,0" />
+        <ComboBox IsEditable="True" Name="KindCB" Style="{DynamicResource ComboBox}" 
+                  Grid.Row="2" Margin="0,0,30,0" HorizontalAlignment="Right" Width="200" Height="50"/>
+
+        <Label Style="{DynamicResource Label}" Grid.Row="3" Content="{DynamicResource l_Age}" Margin="70,20,0,50" VerticalAlignment="Bottom"/>
+        <TextBox Style="{DynamicResource TextBox}" Name="AgeTextBox" Grid.Row="3" Margin="50,0,0,25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Height="40"/>
+
+        <Label Style="{DynamicResource Label}" Grid.Row="3" Content="{DynamicResource l_Weight}" Margin="0,0,0,50" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox  Style="{DynamicResource TextBox}" Name="TextBoxWeight" Grid.Row="3" Margin="0,0,0,25" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="100" Height="40"/>
+
+        
+
+        <Image Source="/Resources/Img/Male.png" Grid.Row="3" Margin="0,0,110,10" HorizontalAlignment="Right" Width="45" Height="45"/>
+        <RadioButton Name="MaleRadioButton" GroupName="SexRadioButton" Checked="MaleRadioButton_Checked" IsChecked="True" Grid.Row="3" Margin="0,80,130,0" HorizontalAlignment="Right" />
+
+        <Image Source="/Resources/Img/Female.png" Grid.Row="3" Margin="0,0,40,10" HorizontalAlignment="Right" Width="30" Height="45"/>
+        <RadioButton Name="FemaleRadioButton" GroupName="SexRadioButton" Checked="FemaleRadioButton_Checked" Grid.Row="3" Margin="0,80,45,0" HorizontalAlignment="Right" />
+
+        <Label Name="ValidLabel"  Grid.Row="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="10" Foreground="Red"/>
+
+        <CheckBox Content="{DynamicResource l_Photo}" Name="PhotoCheckBox"  Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" FontFamily="arial">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2.5" ScaleY="2.5"/>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+
+        <Button Style="{DynamicResource Button}"  Grid.Row="5" Margin="10,10,10,40" Content="{DynamicResource l_NewPet}" FontSize="32" Height="80" Click="Button_Click_Creating"/>
+        <Button Style="{DynamicResource ButtBack}" Grid.Row="5" x:Name="ButtBack" Content="{DynamicResource l_Back}" Width="100"  Margin="0,0,0,10"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_BACK" />
+    </Grid>
+</Window>
+

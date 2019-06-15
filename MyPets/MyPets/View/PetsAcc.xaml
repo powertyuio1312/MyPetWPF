@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MyPets.PetsAcc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyPets"
+             mc:Ignorable="d" 
+             Name="AccControl"
+             d:DesignHeight="200" d:DesignWidth="580">
+    <Grid Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="PetImg"  Grid.RowSpan="4" Grid.Column="0" Width="170" Height="170" HorizontalAlignment="Left" Margin="30,30,0,0"/>
+
+        <TextBlock x:Name="Namepet" Text="Имя" Style="{DynamicResource NameTB}" Grid.Column="1" Grid.Row="0" Margin="10,0,0,10" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="Kindpet" Text="Порода" Grid.Column="1" Grid.Row="1" Style="{DynamicResource TextBlock}" Margin="10.4,0,0,4.4" Height="Auto" />
+        <TextBlock x:Name="Agepet"  Text="Возраст"  Grid.Column="1" Grid.Row="2" Style="{DynamicResource TextBlock}" Margin="10.4,0,0,10.4" Height="Auto" />
+        <TextBlock x:Name="Weightpet" Text="Вес"  Grid.Column="1" Grid.Row="3" Style="{DynamicResource TextBlock}" Margin="10.4,9.6,0,22.2" Height="Auto" />
+    </Grid>
+</UserControl>
